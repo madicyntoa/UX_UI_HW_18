@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+  }
+
+nav-links, a, button, .logo {
+    font-family: laca, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #FFA7A6;
+}
+
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #CD258F;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    display: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
+header button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(205,37,143,1);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+    background-color: rgba(205,37,143,0.5);
+}
+
+body {
+    background-color: black;
+}
+
+.content button {
+    margin-left:250px;
+    padding: 9px 25px;
+    background-color: black;
+    border: #FED001 3px solid;
+    color: #FED001;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 30px;
+}
+
+.content button:hover {
+    color: #CD258F;
+    border: #cd258f 3px solid;
+}
+
+.content p{
+    margin-top: 20px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 70px;
+    width: 150mm;
+    padding-left: 15mm;
+    color: white;
+}
+
+.heroText {
+    height: 600px;
+    padding: 25px;
+    font-family: laca, sans-serif;
+   
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+    font-weight: 500;
+    color: white;
+}
+
+.workOne {
+    grid-area: workOne;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: laca;
+}
+
+.bodyLogo img{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 8%;
+}
+
+.travelocal{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    padding: 50px;
+}
+
+.travelocal p{
+    font-size: smaller;
+    padding-bottom: 12px;
+}
+
+h4 {
+    font-size: 2em;
+    padding-bottom: 12px;
+}
+
+.workTwo {
+    grid-area: workTwo; 
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: laca;
+}
+
+.ecoColl{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    padding: 50px;
+}
+
+.ecoColl p{
+    font-size: smaller;
+    padding-bottom: 12px;
+}
+
+.workThree {
+    grid-area: workThree;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: laca;
+}
+
+.coeef{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    padding: 50px;
+}
+
+.coeef p{
+    font-size: smaller;
+    padding-bottom: 12px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-areas: 
+    'workOne'
+    'workTwo'
+    'workThree'
+    ;
+}
+
+.myWork img{
+    opacity: 0.6;
+}
+
+.myWork button {
+    padding: 9px 25px;
+    background-color: rgba(0,0,0,0.5);
+    border: #FED001 3px solid;
+    color: #FED001;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 30px;
+}
+
+.myWork button:hover{
+    border: #CD258F 3px solid;
+    color: #CD258F;
+}
+
+h3 {
+    font-family: laca;
+    font-size: 2em;
+    color: #FFA7A6;
+    padding: 90px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #FFA7A6;;
+    color: black;
+}
+
+footer p{
+    color: white;
+    font-family: laca;
+    font-weight: 500;
+
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.footer-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.footer-links li a:hover {
+    color: #CD258F;
+}
+
+@media only screen and (max-width: 767px){
+    .nav-links ul{
+        display: none;
+    }
+
+    .cta {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .workGrid {
+        display: grid;
+        grid-template-rows:300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "workOne"
+        "workTwo"
+        "workThree"
+        ;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+
+    .travelocal p{
+        display: none;
+    }
+
+    .travelocal{
+        bottom: 28px;
+        left: 16px;
+        padding: 80px;
+    }
+
+    .ecoColl p{
+        display: none;
+    }
+
+    .ecoColl{
+        bottom: 40px;
+        left: 16px;
+        padding: 60px;
+    }
+
+    .coeef p{
+        display: none;
+    }
+
+    .coeef {
+        bottom: 40px;
+        left: 16px;
+        padding: 60px;
+    }
+
+    h3 {
+        padding: 1em;
+    }
+
+    .heroText {
+        height: 400px;
+    }
+}
