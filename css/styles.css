@@ -146,7 +146,23 @@ h1 {
 
 .travelocal p{
     font-size: smaller;
-    padding-bottom: 12px;
+    padding-bottom: 3em;
+}
+
+.button {
+    padding: 9px 25px;
+    background-color: rgba(0,0,0,0.5);
+    border: #FED001 3px solid;
+    color: #FED001;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-top: 30px;
+}
+
+.button:hover{
+    border: #CD258F 3px solid;
+    color: #CD258F;
 }
 
 h4 {
@@ -223,6 +239,8 @@ h4 {
     color: #CD258F;
 }
 
+
+
 h3 {
     font-family: laca;
     font-size: 2em;
@@ -253,7 +271,7 @@ footer p{
 
 .footer-links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 20px 20px;
 }
 
 .footer-links li a {
